@@ -3,7 +3,7 @@
 This is a fork of [advimman/lama](https://github.com/advimman/lama), an awesome open-source inpainting project. We've modified `bin/predict.py` to enable GPU support via command-line arguments, making it faster on systems with CUDA-compatible GPUs like the RTX 4070 Ti SUPER.
 
 ## Why This Fork?
-The original `predict.py` was hardcoded to use CPU (`device = torch.device("cpu")`), which slowed down inference despite GPU availability. This fork allows you to specify `device=cuda` for blazing-fast performance.
+The original `predict.py` was hardcoded to use CPU (`device = torch.device("cpu")`), which slowed down inference despite GPU availability. This fork allows you to specify `device=cuda` for blazing-fast performance. Tested on RTX 4070 Ti SUPER (Inference: 0.5s)
 
 ## How to Use
 1. Clone this repository:
